@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - id: dryrun
-      uses: hashi-strawb/tfc-ephemeral-workspace-check@test
+      uses: hashi-strawb/tfc-ephemeral-workspace-check@v0.1.0
       with:
         tfe-token: ${{ secrets.TFE_TOKEN }}
         config: dryrun.hcl
