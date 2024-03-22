@@ -14,4 +14,4 @@ jobs:
     - id: foo
       uses: hashi-strawb/tfc-ephemeral-workspace-check@test
       with:
-        TFE_TOKEN: ${{ secrets.TFE_TOKEN }}
+        tfe-token: ${{ secrets.TFE_TOKEN }}
