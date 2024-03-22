@@ -1,9 +1,7 @@
-name: Test
+name: Fix Non-Compliant Workspaces
 
 on:
   workflow_dispatch:
-  push:
-    branches: [ "main" ]
 
 jobs:
 
@@ -11,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - id: foo
+    - id: fix
       uses: hashi-strawb/tfc-ephemeral-workspace-check@test
       with:
         tfe-token: ${{ secrets.TFE_TOKEN }}
-        config: dryrun.hcl
+        config: non-dryrun.hcl
