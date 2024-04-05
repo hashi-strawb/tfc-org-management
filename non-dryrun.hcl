@@ -10,6 +10,7 @@ ignored_projects = [
   "prj-GiZbB7qAkHnMUkdf", # Org Management
   "prj-pcTZQ1XybSPjBScu", # Default Project
   "prj-gpiFDBZUvLnYaqJX", # Azure Dynamic Creds
+  "prj-pKFpHHELGCHR2G9u", # Vault Plugin WIF
 ]
 
 default_ttl = "72h"  # 3 days
